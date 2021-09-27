@@ -1,11 +1,11 @@
-Terraform module which creating vpc and log flow to monitor this vpc on Alibaba Cloud
+Terraform module which creating vpc and log flow to store log of this vpc on Alibaba Cloud
 
-terraform-alicloud-vpc-log-flow
+terraform-alicloud-vpc-log-flows
 =====================================================================
 
 [English](README.md) | 简体中文
 
-本 Module 用于在阿里云创建VPC以及流日志该VPC访问进行记录监控
+本 Module 用于在阿里云创建VPC以及流日志存储该VPC具体访问日志
 
 本 Module 支持创建以下资源:
 
@@ -16,7 +16,7 @@ terraform-alicloud-vpc-log-flow
 
 ```hcl
 module "example" {
-  source = "terraform-alicloud-modules/vpc-flow-log/alicloud"
+  source = "terraform-alicloud-modules/vpc-log-flows/alicloud"
   vpc_id = "vpc-ajwizkaizk1ka"
 }
 ```
