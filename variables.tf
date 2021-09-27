@@ -1,6 +1,13 @@
-variable "vpc_id" {
+variable "vpc_name" {
   description = "The ID of vpc."
   type        = string
+  default     = "default_vpc_name"
+}
+
+variable "vpc_cidr_block" {
+  description = "The cidr block of vpc"
+  type        = string
+  default     = "192.168.0.0/24"
 }
 
 variable "name" {

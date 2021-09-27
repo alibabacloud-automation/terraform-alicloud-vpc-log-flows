@@ -38,4 +38,5 @@ func TestTerraformBasicExampleNew(t *testing.T) {
 
 	// Verify we're getting back the outputs we expect
 	assert.NotEmpty(t, terraformOptions, "this_vpc_flow_log_id")
+	assert.NotEmpty(t, terraformOptions, "this_vpc_id")
 }
