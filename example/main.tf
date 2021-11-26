@@ -1,5 +1,6 @@
 provider "alicloud" {
   profile = "default"
+  region = "cn-beijing"
 }
 
 variable "name" {
@@ -15,5 +16,4 @@ resource "alicloud_vpc" "default" {
 
 module "alicloud_vpc_flow_log" {
   source = "../"
-  vpc_id = alicloud_vpc.default.id
 }
